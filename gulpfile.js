@@ -7,6 +7,12 @@ var path = require('path');
 
 gulp.task('setup');
 
+gulp.task('watch', ['watchLess']);
+
+gulp.task('watchLess', function() {
+    gulp.watch('./www/**/*.less', ['less']);
+});
+
 gulp.task('less', function () {
   return gulp.src('./www/**/*.less') // /**/*.less means access to the .less file at every folder level
     .pipe(less({ //change every .less file into .css file
