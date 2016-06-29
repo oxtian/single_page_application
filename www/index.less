@@ -1,0 +1,123 @@
+// =============================================== Grid System =============================================
+
+// left to right 
+// nowrap = single line
+.flexAcross {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flexDown {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+// when screensize become smaller, right container goes below
+.flowAcross {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.flowDown {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.reverse {
+	flex-direction: reverse;
+}
+
+.flexExpand {
+	-webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.flexShrink {
+	-webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+// ============================================= End: Grid System ==========================================
+
+.fullScreen {
+	width: 100%;
+	height: 100vh; // vh = screen/view height 
+}
+
+body {
+	margin: 0;
+}
+
+header {
+	position: fixed; //for header to stay at a fixed position
+	background-color: white;
+	width: 100%;
+	.navItem {
+		cursor: pointer;
+		padding: 1em;
+		text-transform: capitalize; // first alphabet capitalize
+		&:hover {
+			color: red;
+		}
+	}
+	.iconContainer {
+		cursor: pointer;
+	}
+}
+
+footer {
+	background-color: white;
+	width: 100%;
+	.aboutUsItem {
+		padding: 1em;
+		a {
+			color:black;
+		}
+		a:link {
+			text-decoration: none;
+		}
+		a:hover {
+			color: red;
+		}
+	}
+	.aboutUsContainer, .socialMediaContainer, .copyRightContainer {
+		justify-content: center;
+		width: 100%;
+	}
+	.socialMediaItem {
+		padding: 1em;
+		a:link {
+			text-decoration: none;
+		}
+	}
+}
+
+#homePage {
+	#home {
+		background-color: blue;
+		background-image: url("./workdesk.jpg");
+	}
+
+	#howItWorks {
+		background-color: green;
+	}
+
+	#pricing {
+		background-color: yellow;
+	}
+
+	#collections {
+		background-color: red;
+	}
+
+	#contactUs {
+		background-color: cyan;
+	}
+}
+
+#seasonPage {
+	height: 100vh;
+	width: 100%;
+	background-color: grey;
+}

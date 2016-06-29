@@ -2,11 +2,63 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Inkly Clone</title>
+	<title>Memoire Lab</title>
 	<link rel="stylesheet" href="index.css">
 	<script type="text/javascript"src="index.js"></script>
 </head>
 <body>
-	
+	<header class="flexAcross">
+		<div class="logoContainer flexExpand">
+			<div class="iconContainer" onclick="scrollTowards('home'); changePage('homePage');">a</div>
+		</div>
+		<div class="navContainer flexAcross">
+			<div class="navItem" onclick="scrollTowards('howItWorks')">how it works?</div>
+			<div class="navItem" onclick="scrollTowards('pricing')">pricing</div>
+			<div class="navItem" onclick="scrollTowards('collections')">collections</div>
+			<div class="navItem" onclick="changePage('seasonPage')">christmas</div>
+			<div class="navItem" onclick="scrollTowards('contactUs')">contact us</div>
+		</div>
+	</header>
+	<section id="homePage">
+		<section id="home" class="fullScreen"></section>
+		<section id="howItWorks" class="fullScreen"></section>
+		<section id="pricing" class="fullScreen"></section>
+		<section id="collections" class="fullScreen"></section>
+		<section id="contactUs" class="fullScreen"></section>
+	</section>
+	<section id="seasonPage" style="display:none;">
+		<br><br><br>
+		<h1>HAHAHAHAHAH</h1>
+	</section>
+	<footer class="flowDown">
+		<div class="aboutUsContainer flexAcross">
+			<div class="aboutUsItem">
+				<a href="">Our Story</a>
+			</div>
+			<div class="aboutUsItem">
+				<a href="">FaQ</a>
+			</div>
+			<div class="aboutUsItem">
+				<a href="">Privacy Policy</a>
+			</div>
+			<div class="aboutUsItem">
+				<a href="">Terms of Use</a>
+			</div>
+		</div>
+		<div class="socialMediaContainer flexAcross">
+			<div class="socialMediaItem">
+				<a href="" target="_blank">Facebook</a>
+			</div>
+			<div class="socialMediaItem">
+				<a href="" target="_blank">Twitter</a>
+			</div>
+			<div class="socialMediaItem">
+				<a href="" target="_blank">Instagram</a>
+			</div>
+		</div>
+		<div class="copyRightContainer flexAcross">
+			<p>Copyright © 2016 Memoire Lab. Powered by DinoKT.</p>
+		</div>
+	</footer>
 </body>
 </html>
